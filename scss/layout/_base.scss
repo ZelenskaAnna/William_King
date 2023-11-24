@@ -1,0 +1,89 @@
+html {
+	font-size: 1px;
+	scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff);
+  background: var(--c-dark1);
+  color: var(--c-white);
+}
+
+html._overflow {
+  overflow: hidden;
+
+  body {
+    overflow: hidden;
+  }
+}
+
+a {
+  color: var(--c-white);
+}
+
+.container {
+  max-width: calc(1140rem + 40rem);
+  padding: 0 20rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
+section {
+  padding-bottom: 90rem;
+  border-bottom: 1rem solid rgba(255, 255, 255, 0.15);
+  @include mobile {
+    padding-bottom: 50rem;
+  }
+
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  border-radius: 5rem;
+  padding: 13rem 18rem;
+  transition: var(--transition);
+
+  color: var(--c-white);
+  font-family: var(--ff);
+  font-size: 16rem;
+  font-weight: 500;
+
+  &_primary {
+    background: var(--c-primary);
+
+    &:hover {
+      background: darken($c-primary, 5%);
+    }
+  }
+}
+
+.title {
+  margin-top: 90rem;
+  font-size: 44rem;
+  color: var(--c-white);
+  font-weight: 700;
+  margin-bottom: 17rem;
+  @include mobile {
+    font-size: 32rem;
+    margin-top: 50rem;
+  }
+
+  span {
+    color: var(--c-primary);
+  }
+}
+
+.desc {
+  color: var(--c-body);
+  font-size: 16rem;
+  font-weight: 400;
+  line-height: 160%;
+  max-width: 460rem;
+  margin-bottom: 40rem;
+  @include mobile {
+    font-size: 14rem;
+  }
+}

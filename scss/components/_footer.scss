@@ -1,0 +1,47 @@
+.footer {
+  background: var(--c-dark2);
+  padding-top: 54rem;
+  padding-bottom: 54rem;
+  @include tablet-small {
+    padding-top: 35rem;
+    padding-bottom: 35rem;  
+  }
+
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    @include tablet-small {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 20rem;
+    }
+  }
+
+  &__info {
+    color: var(--c-white);
+    font-size: 16rem;
+    font-weight: 400;
+
+    span {
+      color: var(--c-primary);
+    }
+  }
+
+  &__socials {
+    gap: 34rem;
+    display: flex;
+  }
+
+  &__a {
+    color: var(--c-white);
+    font-size: 16rem;
+    font-weight: 400;
+
+    &:hover {
+      color: var(--c-primary);
+    }
+  }
+}
